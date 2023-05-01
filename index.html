@@ -5,7 +5,8 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0" />
         <title>ShanBot</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+         <script src="script.js"></script>
     </head>
     <body>
     <style>
@@ -23,13 +24,38 @@ body {
  
 .container {
     padding: 1rem;
+    color: black;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+.container1 {
+    padding: 1rem;
+    color: white;
     margin: 0 auto;
     max-width: 100%;
     width: 1000px;
 }
 
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
 header {
-    background-image: url("bg.png");
+    background-color: #f2f2f2;
     background-size: cover;
     background-position: center center;
     color: white;
@@ -46,11 +72,14 @@ header {
 }
 
 .content h1 {
-    color: #FFFFFF;
+    color: #000;
     margin-bottom: 0;
 }
 
 nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+    transition: background-color 0.5s ease-in-out;
     display: flex;
     justify-content: space-between;
 }
@@ -65,10 +94,18 @@ nav ul {
     padding: 0;
 }
 
-nav li a {
+nav li a,
+nav .logo {
+    font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 1rem;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+//hover
+nav li a:hover {
+    color: #00c2ff;
+    text-decoration: underline;
 }
 
 .selected {
@@ -146,23 +183,23 @@ footer p {
                  <button onclick="typeWriter()" style="border-radius: 10px; background: none; opacity: 10px;"> <font id="demo" face="aladin" size="6" color="white">ShanBot<br></font> </button>
             </div>
             <ul>
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="https://wa.me/6283122390511?text=.menu">Contact ShanBot</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="https://wa.me/6283122390511?text=.menu" class="highlight">Chat ShanBot</a></li>
+<li><a href="index.html" class="selected"><i class="fas fa-home"></i> Home</a></li>
+<li><a href="https://wa.me/6283122390511?text=.menu"><i class="fas fa-comment"></i> Chat</a></li>
+<li><a href="about.html"><i class="fas fa-info-circle"></i> About Me</a></li>
+
             </ul>
         </nav>
         <div class="content">
             <div class="container">
             <h1>Bot WhatsApp</h1>
-            <p>Klik tombol dibawah ini untuk berbicara dengan ShanBot!</p> 
-            <a class="highlight button" href="https://wa.me/6283122390511?text=.menu">Number Bot</a>
+            <p>Tambahkan ShanBot ke daftar kontak anda!</p> 
+            <a class="button" href="https://wa.me/qr/EWHNN7U6FT5CE1">Add Number to Contact</a>
         </div>
         </div>
         </header>
 
         <footer>
-            <ul class="container">
+            <ul class="container1">
                 <li>
                     <strong>Thanks To</strong>
                     <p>Muhammad ridwan reynaldy (Author),
